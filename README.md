@@ -2,5 +2,6 @@
 
 ## Examples
 
-This is a example
+This is a example:
+
 
