@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <div align="center">
+        <p>one</p>
+        <img src="img/gnu.png">
+    </div>
+-->
+
+<!-- 
+    https://stackoverflow.com/questions/2603700/how-to-align-3-divs-left-center-right-inside-another-div  
+    https://www.w3schools.com/css/css_float.asp
+-->
+<style>
+
+#container {
+    /*width:100%;*/
+    text-align:center;
+    background-color: black;
+    padding: 2px;
+}
+
+#left {
+    float:left;
+    /*width:100px;*/
+    background-color: yellow;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    /*width:100px;*/
+    background-color: blue;
+}
+
+#right {
+    float:right;
+    /*width:100px;*/
+    background-color: red;
+}        
+    </style>
+
+    <div id="container">
+        <div id="left">a</div>
+        <div id="right">b</div>
+        <div id="center">c</div>
+    </div>
+
+    
+</body>
+</html>

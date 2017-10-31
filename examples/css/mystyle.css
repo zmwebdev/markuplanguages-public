@@ -1,0 +1,24 @@
+/* this is a comment */
+body {
+    background-color: yellow;
+}
+
+p {
+    color:red;
+}
+
+#blue-p {
+    color:blue;
+}
+
+#toplayer {
+    background-color: green;
+}
+
+.gray {
+    color:gray;
+}
+
+.blue-background {
+    background-color: blue;
+}
