@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #FF0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF0000;
+    border: 1px solid black;
+}
+
+.formulary {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h3 style="font-family: 'Raleway', sans-serif; margin-left: 30px; font-size: 40px;">Registry in our page!</h3>
+
+<div class="formulary">
+  
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Surname</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <input type="radio" id="contactChoice2" name="contact" value="phone">
+    <label for="contactChoice2">I dont have experience in this markup languajes</label><br>
+    <input type="radio" id="contactChoice2" name="contact" value="phone">
+    <label for="contactChoice2">I have experience on this languajes</label><br><br>
+    
+    <label for="experience">How much experience do you have with HTML/CSS </label>
+    <select id="country" name="country">
+      <option value="Less than 1 year">Less than 1 year</option>
+      <option value="1-2 years">1-2 year</option>
+      <option value="2-3 years">2-3 year</option>
+      <option value="more than 3 years">more than 3 years</option>
+    </select>
+
+    <label for="subject">Why do you want to learn those markup languajes?</label>
+    <textarea id="Reason" name="Reason" placeholder="Type the reason because you want to learn HTML/CSS" style="height:100px"></textarea>
+
+    <input type="submit" value="Registry!">
+  
+</div>
+
+</body>
+</html>

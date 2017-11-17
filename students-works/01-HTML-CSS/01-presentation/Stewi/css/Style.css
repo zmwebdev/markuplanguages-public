@@ -1,0 +1,190 @@
+/**HEADER+NAV**/
+header{
+    background-color: #FFFFFF;
+
+}
+
+#webname{
+
+    text-align: center;
+   
+}
+#webname h1 ul li{
+    list-style: none;
+    display: inline;
+}
+
+#leftheader{
+    float: left;
+    
+}
+#leftheader ul li{
+    list-style: none;
+}
+#rightheader{
+    float:right;
+    
+    
+}
+#rightheader ul li{
+    display: inline;
+}
+nav{
+   
+    box-shadow: 0px 5px 0px 0px gainsboro;
+
+    
+}
+nav ul{
+  
+    text-align: center;
+    
+}
+nav ul li{
+    display: inline;
+
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+nav a{
+    color: grey;;
+}
+#one a:hover{
+ background-color:orange;
+ color: white;
+}
+#two a:hover{
+    background-color:goldenrod;
+    color: white;
+   }
+#three a:hover{
+    background-color:pink;
+    color: white;
+   }
+ #four a:hover{
+    background-color:orange;
+    color: white;
+   }
+ #five a:hover{
+    background-color:greenyellow;
+    color: white;
+   }
+#six a:hover{
+    background-color:blue;
+    color: white;
+   }
+ #seven a:hover{
+    background-color:blueviolet;
+    color: white;
+   }
+ #eight a:hover{
+    background-color:purple;
+    color: white;
+   }
+ #nine a:hover{
+    background-color:brown;
+    color: white;
+   }
+#ten a:hover{
+    background-color:green;
+    color: white;
+   }
+ 
+/**ENF HEADER+NAV**/
+/** BODY **/
+body{
+    background-color: #F0F0F0;
+}
+/** END BODY **/
+/** S1 **/
+#S1{
+    margin-left: 30%;
+    align-content: center;
+}
+
+#S1 ul li{
+    list-style: none;
+}
+#S1 ul{
+    float: left;
+    background-color: white;
+    border-top: 3px solid black;
+    margin-left: 1%;
+    
+}
+#U1{
+    margin: 5%;
+    margin-left:-6%;
+}
+#U2{
+    margin: 5%;
+    margin-left:-6%;
+    
+}
+
+/**END S1 **/
+
+/** S2**/
+#S2{
+  
+    align-content: center;
+    float: left;
+    margin-left: 30%;
+
+}
+
+#S2 ul li{
+    list-style: none;
+    float: left;
+
+    
+    
+}
+#S2 ul{
+    float: left;
+    background-color: white;
+    border-top: 3px solid black;
+    margin-left: 2%;
+    padding: 5%;
+    
+    
+}
+#U3{
+    
+    margin: 5%;
+    float: right;
+    margin-left: 15%;
+    
+}
+#U4{
+    margin: 5%;
+    float: right;
+    margin-left: 15%;
+    
+}
+#U5{
+    float: right;
+    margin-right: -9%;
+    margin-top: -37%;
+}
+/** END S2 **/
+/**FOOTER**/
+footer{
+    margin-top: 70%;
+    box-shadow: 5px 0px 5px 5px gainsboro;
+}
+footer #links ul li{
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#fnav ul li{
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+    
+}
+
+/**END FOOTER**/

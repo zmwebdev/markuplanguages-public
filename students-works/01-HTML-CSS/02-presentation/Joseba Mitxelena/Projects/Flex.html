@@ -1,0 +1,266 @@
+​<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    body {
+        font: 24px Helvetica;
+        background: #999999;
+    }
+
+    #main {
+        min-height: 800px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row;
+    }
+ 
+    #main > article {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #525251;
+        border-radius: 7pt;
+        background-image: url(../img/BHDP.jpg);
+        flex: 3 1 60%;
+        order: 2;
+    }
+    #Gifidan{
+    padding-left:35%; 
+}
+div.container {
+    width: 100%;
+    border: 5px dotted gray;
+}
+p { 
+    font-size: 20px;
+    color: white;
+}
+header, footer {
+    padding: 0.1em;
+    color: white;
+    clear: left;
+    text-align: center;
+    
+}
+.WoW{
+float:center;
+margin-bottom:1%;
+}
+
+.Youtube{
+    width:10%;
+   
+    margin-top:-5%;
+}
+#Argus{
+padding-left:100px;
+
+}
+#Wot{
+   padding-top:50px;
+}
+#Triumvirate{
+    padding-left:10%;
+}
+#Antorus{
+    padding-left:10%;
+}
+#Border{
+margin-left:-15%;
+padding-right:50px;
+}
+#Awaits{
+padding-left:35%;
+}
+#Gifidan{
+    padding-left:35%; 
+}
+.Heading{
+    Color:White;
+    
+}
+a:hover{
+    color:red
+}
+article {
+    margin-left: 10px;
+   padding-top:30px;
+    padding: 2em;
+    overflow: auto;
+}
+.Border{
+margin-left:1%;
+}
+    #main > nav {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #8888bb;
+        border-radius: 7pt;
+        background-image: url(../img/BHDP.jpg);
+        flex: 1 6 20%;
+        order: 1;
+    }
+  
+    #main > aside {
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #8888bb;
+        border-radius: 7pt;
+        background-image: url(../img/BHDP.jpg);
+        flex: 1 6 20%;
+        order: 3;
+    }
+ 
+    header, footer {
+        display: block;
+        margin: 4px;
+        padding: 5px;
+        min-height: 100px;
+        border: 1px solid #eebb55;
+        border-radius: 7pt;
+        background-image: url(../img/BHDP.jpg);
+    }
+ 
+    /* Too narrow to support three columns */
+    @media all and (max-width: 640px) {
+        #main, #page {
+            flex-direction: column;
+        }
+
+        #main > article, #main > nav, #main > aside {
+        /* Return them to document order */
+            order: 0;
+        }
+  
+        #main > nav, #main > aside {
+            min-height: 140%;
+            max-height: 200%;
+        }
+        #main > header {
+            min-height:50%;
+            max-Height:50%;
+        } 
+        #main > footer{
+            min-height:30%
+        }
+    }
+
+
+    /* Too narrow to support three columns */
+    @media all and (max-width: 900px) {
+        #main, #page {
+            flex-direction: column;
+        }
+
+        #main > article, #main > nav, #main > aside {
+        /* Return them to document order */
+            order: 0;
+        }
+  
+        #main > nav, #main > aside {
+            min-height: 140%;
+            max-height: 200%;
+        }
+        #main > header {
+            min-height:50%;
+            max-Height:50%;
+        } 
+        #main > footer{
+            min-height:30%
+        }
+    }    
+    </style> 
+    </head>
+  
+  <body>
+        
+    <header>
+            <div class="container">
+                    
+                    <header>
+                        <div class="WoW">
+                    
+                                <img src="../img/TransparentLogo.png" width="20%">  
+                    
+                        </div>
+                           <div class="Youtube">
+                    
+                                <a href="https://www.youtube.com/user/WorldofWarcraft">WoW Official Channel<i class="fa fa-youtube-play" aria-hidden="true" style="font-size:500%;"></i> </a>
+                            
+                           </div>
+                           <div id="User">
+                    
+                             <a href="https://eu.battle.net/login/en-us/?ref=http://eu.battle.net/es/&app=com-root"> Click here to Log In<i class="fa fa-user-o" aria-hidden="true" style="font-size:450%;"></i></a>
+                                
+                    
+                           </div>
+                    </div>
+                           
+                    </header>
+
+    <div id='main'>
+            <article>
+                    <div class="Heading">
+                            <h1 style="font-size:60px;">PATCH 7.3 IS NOW AVAILABLE!</h1>
+                    </div>
+                    
+                  <p>Travel to Legion's main headquarters in Argus, explore new regions and fight the evil forces of the <span style="color:#45964D">Burning Legion!</span></p>
+                  <div id="Argus">
+                  <img src="../img/SOA.png" width=25%> 
+                  <img src="../img/Allar.jpg" width=23%>
+                  <img src="../img/Aingame.jpg" width=23%>
+                </div>
+                <div class="Heading">
+                        <table style= "width:100%">
+                    <td>
+                            <h2 style="font-size:200%"><span style="color:white">New dungeon available:</span> <span style="color:#7A6FF7">Seat of the Triumvirate.</span></h2>   
+                    </td>
+                    <td>
+                            <h2 style="font-size:200%"><span style="color:white"> New raid available:</span> <span style="color:#D69E03">Antorus, the Burning Throne.</span></h2> 
+                    </td>
+                    
+                </div>
+                </table>
+                <div id="Triumvirate">
+                <img src="../img/Seat.jpg" width=25%> 
+                <img src="../img/Antorus.jpg" width=25% style="padding-left:30%";> 
+                </div>
+                <div id=Awaits>
+                <p>The Legion awaits in Argus.</p>
+                </div>
+                <div id=Gifidan>
+                <img src="../img/Gifidan.gif" width=25%>
+                </div>
+                </div>
+                </article>
+      <nav>
+          
+            <li><a id="BC" href="#"><a href="https://wow.gamepedia.com/World_of_Warcraft:_The_Burning_Crusade">
+                <img src="../img/TBCLogo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+            <li><a id="Wot" href="#"><a href="https://wow.gamepedia.com/World_of_Warcraft:_Wrath_of_the_Lich_King">
+                <img src="../img/Wotlk-logo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+            <li><a id="Cat" href="#"><a href="https://wow.gamepedia.com/World_of_Warcraft:_Cataclysm">
+                <img src="../img/CataLogo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+           
+
+      </nav>
+      <aside>
+            <li><a id="Pan" href="#"><a href="https://wow.gamepedia.com/Pandaria">
+                <img src="../img/MoPLogo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+            <li><a id="Wod" href="#"><a href="https://wow.gamepedia.com/World_of_Warcraft:_Warlords_of_Draenor">
+                <img src="../img/WodLogo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+            <li><a id="Leg" href="#"><a href="https://wow.gamepedia.com/World_of_Warcraft:_Legion">
+                <img src="../img/LegLogo.png" width="100%" style="padding-bottom:5px;"></a></a></li>
+            <li><a class="Border" href="#"><img src="../img/WoWBorder.png" width="100%" ></a></li>
+
+
+      </aside>
+    </div>
+    <footer>Joseba Mitxelena</footer>
+  </body>
+</html>

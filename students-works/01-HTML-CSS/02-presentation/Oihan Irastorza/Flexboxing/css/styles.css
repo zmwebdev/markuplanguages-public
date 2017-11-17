@@ -1,0 +1,46 @@
+.container {
+	width: 500px;
+	height: 200px;
+	background: #fff;
+	padding:10px;
+	border: 10px solid #2C3E50;
+	margin: 20px;
+
+	/*necesary to make flex box*/
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	/*--------------------------*/
+
+	/*flex-direction:row|column|row-reverse|column-reverse;//to chose the position, in rows or columns*/
+	flex-direction: row;
+	/*flex-wrap:wrap|no-wrap|wrap-reverse;//It defines whether the flex items are forced in a single line or can be flowed into multiple lines*/
+	flex-wrap: wrap;
+	/*flex-flow:row wrap;//value of flex-direction+flex-wrap*/ 
+
+	/*justify-content: flex-start|flex-end|center|space-around|space-between;*/
+
+	/*align-items:flex-start|fñex-end|center|stretch|baseline;//works well when we have items only in one row*/
+
+	/*align-content:flex-start|flex-end|center|stretch|space-between|space-around;//works well when we have more than one row*/
+}
+
+
+.element {
+
+	/*flex-grow:number;//Defines how much increases the width proportionally to the rest of elements.*/
+
+	/*flex-shrink:number;//The oposite of flex-grow*/
+
+	/*flex-basis:works like width;*/
+
+	/*flex:number(flex-grow) number(flex-shrink) pixels(flex-basis);//Its the fusion of flex-grow, flex-shrink and flex-basis*/
+
+	/*order:number;Defines de display of the elements*/
+	color: #fff;
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	background: #E67E22;
+	text-align: center;
+}

@@ -1,0 +1,44 @@
+@font-face{
+    font-family: "1stfont";
+        src: url("../fonts/BerkshireSwash-Regular.ttf");
+}
+@font-face {
+    font-family: "2ndfont";
+        src: url("../fonts/MrBedfort-Regular.ttf");
+}
+* {
+    margin-right: 2px;
+}
+body {
+    background-color: white;
+    
+}
+#text {
+    display: flex;
+    flex-direction: row;
+    
+}
+h3 {
+    font-family: "2ndfont";
+    font-size: 40px;
+}
+#first {
+    flex: 1 1 auto;
+}
+#left {
+    flex: 1 1 auto;
+    width: 200px;
+    height: 200px;
+}
+#second {
+        flex: 1 1 auto;
+}
+#right {
+    flex: 1 1 auto;
+    width: 200px;
+    height: 200px;
+}
+#texttwo {
+    display: flex;
+    flex-direction: row;
+}

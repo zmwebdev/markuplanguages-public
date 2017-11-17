@@ -1,0 +1,476 @@
+* {
+	margin:0;
+	padding: 0;	
+}
+
+body {
+	background: url("../images/ladrillos.jpeg") repeat scroll 0 0 /*repeat is used to cover al the backgorund with little images*/
+}
+
+#all-page {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+section {
+	background-attachment: fixed; /*to see all the background-attachment posibilities:https://www.w3schools.com/cssref/pr_background-attachment.asp;*/
+	background-repeat: no-repeat; /*to see all the background-repeat properties and examples:https://www.w3schools.com/cssref/pr_background-repeat.asp;*/
+	background-size: cover; /*to see all the background sizes posibles and what does each of them: https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=contain*/
+	height: 1200px; 
+	margin: 0 auto;
+	max-width: 1440px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+
+
+
+
+}
+
+#block1 {
+	background-image: url("../images/cmd-wallpaper.jpg"); 
+}
+
+#block2 {
+	background-image: url(../images/html-wallpaper.jpg);
+}
+
+#block3 {
+	background-image: url(../images/block3.jpg);
+}
+
+#topimg {
+	width: 100%;
+	margin:auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#headerimg {
+	margin: auto;
+	width: 300px;
+}
+
+#title {
+    background-color: #02223a;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    font-size: 5em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    opacity: 0.76;
+    text-align: center;
+    text-shadow: 1px 1px 1px #666;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+header {
+	width: 100%;
+}
+
+/*NAV-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav {
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1100px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav > ul {
+	display:table;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	position: relative;
+} 
+
+nav > ul li {
+	display: table-cell;
+	font-family: 'Arima Madurai', cursive;
+		font-size: 1em;
+}
+
+nav > ul > li > ul > li {
+	display: none;
+
+}
+
+nav > ul li a {
+	color: #000;
+	display: block; /*with display block, we can specify the width and height of the item*/
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover/*the function :hover works when u put the mouse in front of the object*/ {
+	background::#5da5a2;
+
+}
+
+nav > ul > li > a span {
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top:-55px;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height: 60px; /*to align the height of the icons inside of the line*/
+}
+
+nav > ul > li > a:hover > span {
+	top:0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav ul li a .nav1 {
+	background:#E87544;
+}
+
+nav ul li a .nav2 {
+	background:#5D50CE;
+}
+
+nav ul li a .nav3 {
+	background:#42C197;
+}
+
+nav ul li a .nav4 {
+	background:#C861E8;
+}
+
+nav ul li a .nav5 {
+	background:#B2E143;
+}
+
+nav ul li a .nav6 {
+	background:#DC8888;
+}
+
+/* /NAV---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+#rotateimage { /*function pack to rotate*/
+	 -webkit-transform:rotate(180deg);
+  	-moz-transform: rotate(180deg);
+  	-ms-transform: rotate(180deg);
+ 	 -o-transform: rotate(180deg);
+ 	 transform: rotate(180deg);
+}
+
+#flexarrow {
+	margin: auto;
+	margin-top: 30px;
+	width: 200px;
+}
+
+#pointimages{
+	margin: auto;
+	width: 0px;
+}
+
+.pointimage {
+	width: 10px;
+	height: 10px;
+}
+
+
+/*-----------------------------------------------------------------------BLOCK2----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+#b2topstructure {
+	width: 100%;
+	height: 50%;
+	margin: auto;
+	/*border:1px solid red;*/
+
+}
+
+#divahimg {
+	border: 1px solid red;
+
+}
+
+#abouthtmlsub {
+	border: solid;
+	width: 30%;
+	float:left;
+	background: rgba(255, 255, 204, 0.7);
+	min-width: 300px;
+	padding:60px;
+	margin-top: 100px;
+	margin-left: 4%;
+	
+	border-image-source: url(../images/border.gif)
+	border-style: solid;
+	border-width: 35px 33px 27px 27px;
+	-moz-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	-webkit-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	-o-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	border-image: url(../images/border.gif) 35 33 27 27 fill repeat;
+
+}
+
+
+
+#aboutcsssub {
+	border:solid;
+	width: 30%;
+	float:right;
+	background: rgba(51, 153, 255, 0.7);
+	padding: 33px;
+	margin-top: 99px;
+	margin-right: 4%;
+	min-width: 280px;
+	
+	border-image-source: url(../images/border.gif)
+	border-style: solid;
+	border-width: 35px 33px 27px 27px;
+	-moz-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	-webkit-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	-o-border-image: url(../images/border.gif) 35 33 27 27 repeat;
+	border-image: url(../images/border.gif) 35 33 27 27 fill repeat;
+}
+
+
+
+#actitle {
+	font-family: 'Amatic SC', cursive;
+	font-size: 5em;
+
+}
+
+#acp {
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 20px;
+}
+
+
+#acp2 {
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+}
+
+
+#aboutexamples {
+	width: 65%;
+	background-color: rgba(153,204,255,0.7);
+	margin-top: 70px;
+	padding: 30px;
+	/*border: 1px solid red;*/
+	margin-left: 20%;
+	box-shadow: 10px 10px 10px #fff;
+}
+
+.imgsubbtitle {
+	font-family: 'Arima Madurai', cursive;
+
+}
+	
+#belowt {
+	padding: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+#aboutexamples {
+display:none;
+}
+}
+
+/*------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-image: url(../images/footerimg.png);
+  background-size: cover;
+
+
+}
+ 
+#joinus {
+	
+	/*border: 1px solid red;*/
+	width: 20%;
+	padding: 10px;
+	min-width: 300px;
+}
+
+#h4joinus {
+	font-size: 1.5em;
+	color: #C0C0C0;
+}
+
+#signup {
+	border-style: outset;
+	border-color: #FFB266;
+	padding: 5px;
+	margin-left: 10px;
+	background-color: #FFB266;
+}
+
+#signup:active {
+	border-style: inset;
+	background: #CC6600;
+	border:#CC6600 inset;
+}
+
+@media screen and (max-width: 1000px) {
+#footernav {
+display:none;
+}
+}
+
+#footernav {
+ 	position:absolute;
+ 	/*border:1px solid red;*/
+ 	width: 900px;
+ 	text-align: center;
+ 	right:100px;
+ 	left: 400px;
+ }
+
+#footernav > ul > li {
+	display: inline;
+	padding: 35px;
+	font-size: 1.8em;
+	font-family: 'Galdeano', sans-serif;
+}
+
+
+ #tnavigation {
+ 	font-size: 3em;
+ }
+
+#footernav > ul > li a {
+	color: #C0C0C0;
+}
+
+#searchus {
+	/*border:1px solid red;*/
+	width: 21.5%;
+	list-style: none;
+	size: 2em;
+	margin-top: 10px;
+	min-width: 300px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+#searchus > li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#searchus span {
+	padding-right: 8px;
+	color: #C0C0C0;
+	font-size: 130%;
+}
+
+
+ #copyright {
+ 	font-family: 'Average Sans', sans-serif;
+ 	/*border: 1px solid red;*/
+ 	width: 100%;
+ 	text-align: center;
+ 	font-size: 0.8em;
+ }
+
+.footext {
+	font-family: 'Average Sans', sans-serif;
+}
+
+.footerlist {
+	font-family: 'Average Sans', sans-serif;
+}
+
+input[type=text] {
+	padding: 9px 11px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#iframe1-1 {
+	position: absolute;
+	top: 80px;
+	left:500px;
+
+}
+
+#Joinustxt {
+	position: absolute;
+	font-size: 3em;
+	margin-top: 300px;
+	margin-left: 50px;
+	color: white;
+	font-family: 'Arima Madurai', cursive;
+}

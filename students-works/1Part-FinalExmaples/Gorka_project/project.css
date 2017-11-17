@@ -1,0 +1,309 @@
+body{
+	
+background-color: #BBFFFF;
+
+}
+
+
+#orria{
+	
+border-style:double;
+	
+border-color:black;
+	
+box-shadow:10px 10px 10px #222222;
+	
+width: 1024px;
+	
+margin: auto;
+	
+background-color: #00ddff;
+
+
+}
+
+#logoa{
+	
+width:94px;
+	
+height:111px;
+	
+float:left;
+	
+background-size: 94px 111px;
+	
+margin-left: 10px;
+	
+margin-top:10px;
+
+}
+
+
+
+@font-face{
+	
+font-family: uranium;
+
+src: url(letrak/uranium.ttf);
+
+}
+
+
+#titulua{
+	
+float:left;
+	
+font-family: uranium;
+	
+font-size:40px;
+	
+text-shadow: 5px 5px 10px #222222;
+	
+margin-top: 30px;
+	
+margin-left: 300px;
+
+}
+
+
+#login{
+	
+float:right;
+	
+margin-right:25px;
+	
+margin-top:25px;
+
+}
+
+#register{
+    float: left;
+}
+
+
+#menua{
+	
+clear:both;
+	
+width:1024px;
+
+}
+
+
+.botoia{
+	
+border-radius:15px;
+	
+border-color: blue;
+	
+border: 1px solid #000000;
+	
+background-color: #cccccc;
+	
+width: 200px;
+	
+float: left;
+	
+margin-left: 45px;
+	
+text-align:center;
+
+}
+
+
+.botoia:hover{
+	
+background-color:green;
+	
+border: 2px dashed yellow;	
+
+}
+
+
+.menuesteka{
+	
+text-decoration: none;
+
+}
+
+
+.menuesteka:hover{
+	
+color: yellow;
+
+}
+
+
+#gorputza{
+	
+clear:both;
+	
+border: 1px solid black;
+	
+width: 990px;
+	
+border-radius: 15px;
+	
+margin-top:50px;
+	
+margin-left: 15px;
+	
+background-color: #cccccc;
+
+box-shadow: 5px 5px 5px black;	
+	
+text-align: justify;	
+		
+}
+
+
+#welcome{
+	
+width:400px;
+	
+height: 200px;
+	
+background-image: url(images/bienvenido.png);
+	
+margin-top: 25px;
+	
+margin-left: 350px;
+	
+border: 5px solid black;
+	
+box-shadow: 5px 5px 5px gray;	
+
+}
+
+
+#gorputza h1{
+	
+color: green;
+	
+margin-left: 15px;
+
+}
+
+
+#gorputza h3{
+	
+color: #00bb00;
+
+margin-left: 15px;
+
+}
+
+#goiburua h4{
+text-decoration: underline;
+font-weight: bold;
+color: blue;
+}
+
+#gorputza p{
+	
+margin-left: 15px;
+	
+text-indent: 25px;
+
+}
+
+
+#oina{
+	
+text-align: center;
+	
+margin-top: 25px;
+	
+margin-bottom: 25px;
+
+}
+
+
+
+#flex{
+    margin-top: 10px;
+	
+clear:both;
+	
+width:1024px;
+}
+
+.one{
+    
+flex-direction: row;
+ justify-content: space-around;
+
+  
+border-color: blue;
+	
+border: 1px solid #000000;
+	
+background-color: blue;
+	
+width: 200px;
+	
+float: left;
+	
+margin-left: 10px;
+	
+text-align:center; 
+}
+
+.two{
+    
+flex-direction: column;
+    justify-content: center;
+border-color: blue;
+	
+border: 1px solid #000000;
+	
+background-color: blue;
+	
+width: 200px;
+	
+margin-left: 10px;
+	
+text-align:center; 
+}
+
+#proba{
+    clear: both;
+    margin-top: 80px;
+}
+
+#email{
+clear: both;
+margin-top: 15px;
+text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

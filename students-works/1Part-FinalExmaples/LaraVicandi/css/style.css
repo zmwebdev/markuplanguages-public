@@ -1,0 +1,135 @@
+body {
+  margin: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  text-align: justify;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  }
+ /* header=logo*beach photo */
+.header {
+  background: black;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: black;
+    
+  }
+  .logo {
+    padding: 2em;
+    width: 15%;
+  }
+  .beach {
+    padding: 1em;
+    width: 70%;
+    }
+  img {
+    border-radius: 15px;
+   }
+ /* navigation menu */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:  hidden;
+    background-color: black;
+    }
+
+  li {
+    float: left;
+     }
+
+  li a {
+    display: inline-block;
+    color: dodgerblue;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color:white;
+  }
+
+  span {
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 100%;
+    }
+
+  h2 {
+    font-size: 50%;
+}
+
+  h3  {
+    font-size:100%;
+  }
+
+  p {
+    font-size: 80%;
+}
+
+.contact {
+  font-size: 60%;
+ }
+  
+
+.iframe {
+  align-content: center;
+}
+/* correct */
+ .main {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+ }
+ .photo{
+  padding-block-end: 1em;
+  
+  }
+  .text {
+    width: 94%;
+  }
+.main aside {
+  flex: 1 6 25%;
+  background-color:  dodgerblue;
+  order: 2;
+  bottom: 0%;
+  text-align: center;
+  }
+
+.main article {
+  flex: 3 1 65%;
+  order: 1;
+}
+.form {
+  padding: 1em;
+
+}
+
+iframe {
+  padding: 1em;
+}
+ 
+footer {
+  height: 2em;
+  width: 100%;
+  background: black;
+  color: white;
+  }
+  footer h2{
+    text-align: center;
+    padding: 1em;
+  }

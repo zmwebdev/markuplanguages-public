@@ -1,0 +1,86 @@
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+    background-color: cornflowerblue;
+   flex-basis: auto;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Aclonica'; 
+
+}
+
+
+article {
+    margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+h1.fontchange{
+    text-align: center;
+    font-family: 'Aclonica';
+    color: DarkRed;
+
+}
+
+a{
+    color: GoldenRod;
+}
+
+li{
+    display: inline;
+    padding: 30px;
+}
+
+.News{
+        border: 1px solid black;
+        border-radius: 15px;     
+        width: 100%;
+        color: white;
+        font-family: 'Aclonica';
+        height: 80%;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-x: auto;
+}
+
+.bold{
+    font-weight: bold
+
+}
+
+#OtherNews{
+    padding: 16px;
+    background-color: gray;
+    clear: both;
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.topstories{
+   color: #404040; 
+}
+
+.boldy{
+    font-weight: bold;
+
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}

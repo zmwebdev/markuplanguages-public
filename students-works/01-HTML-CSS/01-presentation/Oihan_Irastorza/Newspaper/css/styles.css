@@ -1,0 +1,167 @@
+body {
+	margin: 0px auto;
+}
+
+#all-page {
+	position: relative;
+	
+
+}
+
+#header {
+	margin: auto;
+	width: 50%;
+	height: 125px;
+}
+
+#title-subitle {
+	position: relative;
+}
+
+#metro-logo {
+	position: static;
+	float: left;
+
+}
+
+.follow-icons {
+	position: relative;
+	margin-right: 10px;
+	width: 25px;
+	right: -333px;
+	top: 10px;
+}
+
+#main-subtitle {
+	position: relative;
+	right:0px;
+	top: 53px;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	text-transform: uppercase;
+	letter-spacing: 0,1px;
+}
+	
+#numbershares {
+	position: relative;
+	font-size: 50px;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	color:red;
+	right: -330px;
+	top: -30px;
+
+
+}
+
+#m {
+	position: relative;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size: 27px;
+	color:red;
+	right:-925px;
+	top: -65px;
+
+}
+
+#shares-mini {
+	position: relative;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	color:red;
+	right: -870px;
+	top: -70px;
+	}
+
+#search-icon {
+	width: 20px;
+}
+
+#nav {
+	margin: auto;
+	position: relative;
+	width: 50%;
+	height: 100
+	border: 1px solid;
+	background-color: #f1f1f1;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 3px;
+	padding-right: 8px;
+}
+
+#section {
+	float:left;
+	width: 28%;
+	margin-left: 25%;
+	align-content: center;
+}
+
+.section-big-text {
+	background-color: rgba(186, 34, 178, 0.8);
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+
+.aside{
+	float: right;
+	width: 20%;
+	margin-right: 450px;
+}
+
+#justin {
+	width: 30%;
+	height: 40px;
+}
+
+#textjustin {
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size:19px;
+	top:7px;
+	position: relative;
+	background:#ffc000;
+}
+
+.aside-images {
+	width: 145px;
+	height:109px;
+	margin: 3px;
+	
+}
+
+.aside-text {
+	float: right;
+	width: 50%;
+	font-family: 'ScoutBold', Arial, Helvetica, sans-serif;
+	font-size: 91%;
+	font-weight: bold;
+	margin-right: 30px;
+
+}
+
+.footer {
+	position: relative;
+	margin-top:5500px;
+	border:1px solid;
+	width: 50%;
+
+}
+ 
+#nav2 {
+	width: 50%;
+	height: 100
+	border: 1px solid;
+	background-color: #f1f1f1;
+	font-family: ScoutBold, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin:auto;
+}
+
+.footer-icon {
+	position: relative;
+	width: 1.5%;
+
+}
+
