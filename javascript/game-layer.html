@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+</head>
+
+<body>
+
+    <style>
+        .element  {
+            background-color: coral;
+            border-style: solid;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 100px;
+            height: 100px;          
+        };
+    </style>
+
+    <div id="elementID" class="element"></div>
+
+
+    <script>
+        console.log("hi");
+
+        // init
+        document.getElementById("elementID").style.left = "50px";
+        document.getElementById("elementID").style.top = "50px";        
+
+
+        document.addEventListener('keydown', function(event) {
+            console.log(event.keyCode);
+            if (event.keyCode == 39) { // -> key
+                document.getElementById("elementID").style.left = "200px";
+                document.getElementById("elementID").style.top = "200px";
+            }
+        });
+
+    </script>
+
+</body>
+</html>
