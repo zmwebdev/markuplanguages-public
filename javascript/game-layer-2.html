@@ -62,6 +62,9 @@
 
         function clone() {
             var new_node = document.getElementById("elementID").cloneNode(true);
+            // new id
+            new_node.id = "element" + new Date().getTime();
+            // random color
             new_node.style.background = getRandomColor();
             // Number(s.substr(0,s.length-2)) : "100px"->100
             var left = Number(new_node.style.left.substr(0,new_node.style.left.length-2));
