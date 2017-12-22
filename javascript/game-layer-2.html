@@ -70,8 +70,8 @@
             var left = Number(new_node.style.left.substr(0,new_node.style.left.length-2));
             var top = Number(new_node.style.top.substr(0,new_node.style.top.length-2));
 
-            left = left + 20;
-            top = top + 20;
+            left = left + Math.random() * document.documentElement.clientWidth;
+            top = top + Math.random() * document.documentElement.clientHeight;
             new_node.style.left = left + 'px';
             new_node.style.top = top + 'px';
 
@@ -86,7 +86,13 @@
                 color += letters[Math.floor(Math.random() * 16)];
             }
             return color;
-        }        
+        }
+
+        //
+        for (var i = 0; i < 50; i++) {
+            clone();
+        } 
+        
     </script>
 
 </body>
