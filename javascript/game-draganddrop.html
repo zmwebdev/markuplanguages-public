@@ -21,23 +21,59 @@
         };
     </style>
 
-    <div id="elementID" class="element"></div>
+    <div id="elementID" class="element" draggable="true"></div>
 
 
     <script>
+        // https://www.html5rocks.com/en/tutorials/dnd/basics/
+        // https://developer.mozilla.org/en-US/docs/Web/Events/drop
 
         // init
         var element = document.getElementById("elementID");        
 
-        element.addEventListener('mousedown', function(event) {
+        element.addEventListener('dragstart', function(event) {
+            console.log('dragstart');
+            console.log(event);
+            // this: elementua
+            this.style.opacity = '0.4';  // this / e.target is the source node.
+        });
+
+        element.addEventListener('drag', function(event) {
+            console.log('drag');
             console.log(event);
         });
 
-        element.addEventListener('mouseup', function(event) {
+        element.addEventListener('dragenter', function(event) {
+            console.log('dragenter');
+            console.log(event);
+        });
+        element.addEventListener('dragleave', function(event) {
+            console.log('dragleave');
+            console.log(event);
+        });
+        element.addEventListener('dragover', function(event) {
+            console.log('dragover');
+            console.log(event);
+        });
+        element.addEventListener('drop', function(event) {
+            console.log('drop');
+            console.log(event);
+        });
+        element.addEventListener('dragend', function(event) {
+            console.log('dragend');
+            console.log(event);
+            //
+            document.getElementById("elementID").style.left = event.clientX + "px";
+            
+        });
+        element.addEventListener('dragexit', function(event) {
+            console.log('dragexit');
             console.log(event);
         });
 
     </script>
+
+
 
 </body>
 </html>
