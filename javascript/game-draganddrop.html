@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+</head>
+
+<body>
+
+    <style>
+        .element  {
+            background-color: #5079FF;
+            border-style: solid;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 100px;
+            height: 100px;          
+        };
+    </style>
+
+    <div id="elementID" class="element"></div>
+
+
+    <script>
+
+        // init
+        var element = document.getElementById("elementID");        
+
+        element.addEventListener('mousedown', function(event) {
+            console.log(event);
+        });
+
+        element.addEventListener('mouseup', function(event) {
+            console.log(event);
+        });
+
+    </script>
+
+</body>
+</html>
