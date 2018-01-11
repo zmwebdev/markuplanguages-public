@@ -58,29 +58,28 @@
             });
 
             element.addEventListener('drag', function(event) {
-                console.log('drag');
+                console.log('drag' + ':' + this.id);
                 // console.log(event);
             });
 
             element.addEventListener('dragenter', function(event) {
-                console.log('dragenter');
+                console.log('dragenter' + ':' + this.id);
                 // console.log(event);
             });
             element.addEventListener('dragleave', function(event) {
-                console.log('dragleave');
+                console.log('dragleave' + ':' + this.id);
                 // console.log(event);
             });
             element.addEventListener('dragover', function(event) {
-                console.log(this.id)
-                console.log('dragover');
+                console.log('dragover' + ':' + this.id);
                 // console.log(event);
             });
             element.addEventListener('drop', function(event) {
-                console.log('drop');
+                console.log('drop' + ':' + this.id);
                 // console.log(event);
             });
             element.addEventListener('dragend', function(event) {
-                console.log('dragend');
+                console.log('dragend' + ':' + this.id);
                 console.log(event);
                 //
                 // document.getElementById("elementID").style.left = "50px";
@@ -93,7 +92,7 @@
                 this.style.opacity = '1';            
             });
             element.addEventListener('dragexit', function(event) {
-                console.log('dragexit');
+                console.log('dragexit' + ':' + this.id);
                 //console.log(event);
             });
 
