@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+</head>
+
+<body>
+
+    <style>
+        .element  {
+            background-color: #5079FF;
+            border-style: solid;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 100px;
+            height: 100px;          
+        }
+        .element2  {
+            background-color: rgb(255, 92, 80);
+            border-style: solid;
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            width: 100px;
+            height: 100px;          
+        };
+
+    </style>
+
+    <div id="elementID" class="element" draggable="true"></div>
+    <div id="elementID2" class="element2" draggable="true"></div>
+
+
+    <script>
+        // https://www.html5rocks.com/en/tutorials/dnd/basics/
+        // https://developer.mozilla.org/en-US/docs/Web/Events/drop
+        // https://www.w3schools.com/howto/howto_js_draggable.asp
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+
+        // init
+
+        function addEvents(element) {
+
+            element.addEventListener('dragstart', function(event) {
+                console.log('dragstart');
+                console.log(event);
+                // this: elementua
+                this.style.opacity = '0.4';  // this / e.target is the source node.
+
+                //document.getElementById("elementID").setAttribute("initialX", event.clientX);
+                this.setAttribute("initialLayerX", event.layerX);
+                this.setAttribute("initialLayerY", event.layerY);
+
+            });
+
+            element.addEventListener('drag', function(event) {
+                console.log('drag');
+                // console.log(event);
+            });
+
+            element.addEventListener('dragenter', function(event) {
+                console.log('dragenter');
+                // console.log(event);
+            });
+            element.addEventListener('dragleave', function(event) {
+                console.log('dragleave');
+                // console.log(event);
+            });
+            element.addEventListener('dragover', function(event) {
+                console.log('dragover');
+                // console.log(event);
+            });
+            element.addEventListener('drop', function(event) {
+                console.log('drop');
+                // console.log(event);
+            });
+            element.addEventListener('dragend', function(event) {
+                console.log('dragend');
+                console.log(event);
+                //
+                // document.getElementById("elementID").style.left = "50px";
+
+                var x = event.clientX - this.getAttribute("initialLayerX");
+                this.style.left = x + "px";
+                var y = event.clientY - this.getAttribute("initialLayerY");
+                this.style.top = y + "px";
+
+                this.style.opacity = '1';            
+            });
+            element.addEventListener('dragexit', function(event) {
+                console.log('dragexit');
+                console.log(event);
+            });
+
+        }
+
+        /*
+        var element = document.getElementById("elementID");
+        addEvents(element)     
+        var element2 = document.getElementById("elementID2");
+        addEvents(element2)
+        */
+        
+        // using queryselectorall
+        elements = document.querySelectorAll('div[draggable]');
+        elements.forEach(element => {
+            addEvents(element);
+        }); 
+
+
+    </script>
+
+
+
+</body>
+</html>
