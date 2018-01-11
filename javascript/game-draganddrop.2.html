@@ -47,7 +47,7 @@
 
             element.addEventListener('dragstart', function(event) {
                 console.log('dragstart');
-                console.log(event);
+                // console.log(event);
                 // this: elementua
                 this.style.opacity = '0.4';  // this / e.target is the source node.
 
@@ -71,6 +71,7 @@
                 // console.log(event);
             });
             element.addEventListener('dragover', function(event) {
+                console.log(this.id)
                 console.log('dragover');
                 // console.log(event);
             });
@@ -93,7 +94,7 @@
             });
             element.addEventListener('dragexit', function(event) {
                 console.log('dragexit');
-                console.log(event);
+                //console.log(event);
             });
 
         }
@@ -104,8 +105,10 @@
         var element2 = document.getElementById("elementID2");
         addEvents(element2)
         */
-        
+
         // using queryselectorall
+        // https://drafts.csswg.org/selectors/#overview
+
         elements = document.querySelectorAll('div[draggable]');
         elements.forEach(element => {
             addEvents(element);
