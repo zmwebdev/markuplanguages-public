@@ -103,7 +103,11 @@
         }
         */
         allElements.forEach(function(element) {
-            element.style.width = "30px"
+            element.style.width = "30px";
+            //
+            // https://stackoverflow.com/questions/6242976/javascript-hide-show-element
+            //element.style.visibility = "hidden";
+            element.style.visibility = "visible";
         });
 
     </script>
