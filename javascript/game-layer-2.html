@@ -89,10 +89,23 @@
         }
 
         // main
-        for (var i = 0; i < 500; i++) {
+        for (var i = 0; i < 50; i++) {
             clone();
         } 
-        
+
+        // resize
+        //var allElements = document.getElementsByClassName('element');
+        var allElements = document.querySelectorAll(".element");
+        /*
+        for (var i = 0; i < allElements.length; i++) {
+            allElements[i].style.width = "30px"
+            //console.log(allElements[i]);
+        }
+        */
+        allElements.forEach(function(element) {
+            element.style.width = "30px"
+        });
+
     </script>
 
 </body>
