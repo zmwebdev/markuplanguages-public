@@ -74,10 +74,7 @@
                 console.log('dragover' + ':' + this.id);
                 // console.log(event);
             });
-            element.addEventListener('drop', function(event) {
-                console.log('drop' + ':' + this.id);
-                // console.log(event);
-            });
+            
             element.addEventListener('dragend', function(event) {
                 console.log('dragend' + ':' + this.id);
                 console.log(event);
@@ -113,6 +110,14 @@
             addEvents(element);
         }); 
 
+
+        // 
+        document.addEventListener("drop", function( event ) {
+            // prevent default action (open as link for some elements)
+            event.preventDefault();
+            // move dragged elem to the selected drop target
+            console.log(event);
+        }, false);
 
     </script>
 

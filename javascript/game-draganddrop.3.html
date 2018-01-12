@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+</head>
+
+<body>
+
+    <style>
+        .element  {
+            background-color: #5079FF;
+            border-style: solid;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 100px;
+            height: 100px;          
+        }
+        .element2  {
+            background-color: rgb(255, 92, 80);
+            border-style: solid;
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            width: 100px;
+            height: 100px;          
+        }
+
+        .dropzone  {
+            background-color: rgb(73, 68, 67);
+            border-style: solid;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            width: 200px;
+            height: 200px;          
+        }
+
+
+    </style>
+
+    <div id="elementID" class="element" draggable="true"></div>
+    <div id="elementID2" class="element2" draggable="true"></div>
+    <div class="dropzone"></div>
+
+
+    <script>
+        // https://www.html5rocks.com/en/tutorials/dnd/basics/
+        // https://developer.mozilla.org/en-US/docs/Web/Events/drop
+        // https://www.w3schools.com/howto/howto_js_draggable.asp
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+
+        // init
+
+        var dragged;
+
+        document.addEventListener('dragstart', function(event) {
+            // console.log('dragstart' + ':' + event.target.id);
+            // store a ref. on the dragged elem
+            dragged = event.target;
+
+            event.target.style.opacity = '0.4';  // this / e.target is the source node.
+
+            //document.getElementById("elementID").setAttribute("initialX", event.clientX);
+            event.target.setAttribute("initialLayerX", event.layerX);
+            event.target.setAttribute("initialLayerY", event.layerY);
+
+        });
+
+        document.addEventListener('drag', function(event) {
+            // console.log('drag' + ':' + event.target.id);
+            // console.log(event);
+        });
+
+        document.addEventListener('dragenter', function(event) {
+            // console.log('dragenter' + ':' + event.target.id);
+            // console.log(event);
+        });
+        document.addEventListener('dragleave', function(event) {
+            // console.log('dragleave' + ':' + event.target.id);
+            // console.log(event);
+        });
+        document.addEventListener('dragover', function(event) {
+            // console.log('dragover' + ':' + event.target.id);            
+            // console.log(event);
+            
+            // prevent default to allow drop
+            event.preventDefault();            
+        });
+        
+        document.addEventListener('dragend', function(event) {
+            // console.log('dragend' + ':' + event.target.id);
+            // console.log(event);
+            //
+            // document.getElementById("elementID").style.left = "50px";
+
+            var x = event.clientX - event.target.getAttribute("initialLayerX");
+            event.target.style.left = x + "px";
+            var y = event.clientY - event.target.getAttribute("initialLayerY");
+            event.target.style.top = y + "px";
+
+            event.target.style.opacity = '1';            
+        });
+        document.addEventListener('dragexit', function(event) {
+            // console.log('dragexit' + ':' + event.target.id);
+            //console.log(event);
+        });
+        document.addEventListener("drop", function( event ) {
+            // prevent default action (open as link for some elements)
+            // event.preventDefault();
+            console.log('drop' + ':' + event.target.id);
+            console.log(event);
+        });
+
+    </script>
+
+
+
+</body>
+</html>
