@@ -18,13 +18,28 @@
             top: 150px;
             width: 100px;
             height: 100px;          
-        };
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            /* border: 2px solid darkblue;*/
+            /*background-color: blue;*/
+            color: black;
+            font: 16px "Zilla", "Open Sans", "Helvetica", "Arial", sans-serif;
+        }        
     </style>
 
     <div id="elementID" class="element" draggable="true"></div>
 
+    <div class="box">
+          <code>x</code>: <span id="x">n/a</span>
+          <code> y</code>: <span id="y">n/a</span>
+      </div>
 
     <script>
+
+
         // https://www.html5rocks.com/en/tutorials/dnd/basics/
         // https://developer.mozilla.org/en-US/docs/Web/Events/drop
         // https://www.w3schools.com/howto/howto_js_draggable.asp
@@ -46,24 +61,24 @@
         });
 
         element.addEventListener('drag', function(event) {
-            console.log('drag');
+            // console.log('drag');
             // console.log(event);
         });
 
         element.addEventListener('dragenter', function(event) {
-            console.log('dragenter');
+            // console.log('dragenter');
             // console.log(event);
         });
         element.addEventListener('dragleave', function(event) {
-            console.log('dragleave');
+            // console.log('dragleave');
             // console.log(event);
         });
         element.addEventListener('dragover', function(event) {
-            console.log('dragover');
+            // console.log('dragover');
             // console.log(event);
         });
         element.addEventListener('drop', function(event) {
-            console.log('drop');
+            // console.log('drop');
             // console.log(event);
         });
         element.addEventListener('dragend', function(event) {
@@ -72,9 +87,11 @@
             //
             // document.getElementById("elementID").style.left = "50px";
 
-            var x = event.clientX - this.getAttribute("initialLayerX");
+            // var x = event.clientX + this.getAttribute("initialLayerX");
+            var x = event.screenX;
             this.style.left = x + "px";
-            var y = event.clientY - this.getAttribute("initialLayerY");
+            // var y = event.clientY + this.getAttribute("initialLayerY");
+            var y = event.screenY;
             this.style.top = y + "py";
 
             this.style.opacity = '1';            
@@ -83,6 +100,12 @@
             console.log('dragexit');
             console.log(event);
         });
+
+        // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX
+        document.addEventListener("mousemove", function(event){
+            document.getElementById("x").innerText = event.pageX;
+            document.getElementById("y").innerText = event.pageY;
+        }, false);
 
     </script>
 
