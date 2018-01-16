@@ -39,12 +39,22 @@
             height: 200px;          
         }
 
+        .dropzone2  {
+            background-color: rgb(35, 245, 81);
+            border-style: solid;
+            position: absolute;
+            left: 300px;
+            top: 10px;
+            width: 200px;
+            height: 200px;          
+        }
 
     </style>
 
     <div id="elementID" class="element" draggable="true"></div>
     <div id="elementID2" class="element2" draggable="true"></div>
-    <div class="dropzone"></div>
+    <div id="dropzoneID" class="dropzone"></div>
+    <div id="dropzoneID2" class="dropzone2"></div>
 
 
     <script>
@@ -58,7 +68,7 @@
         var dragged;
 
         document.addEventListener('dragstart', function(event) {
-            // console.log('dragstart' + ':' + event.target.id);
+            //console.log('dragstart' + ':' + event.target.id);
             // store a ref. on the dragged elem
             dragged = event.target;
 
@@ -71,20 +81,20 @@
         });
 
         document.addEventListener('drag', function(event) {
-            // console.log('drag' + ':' + event.target.id);
+            //console.log('drag' + ':' + event.target.id);
             // console.log(event);
         });
 
         document.addEventListener('dragenter', function(event) {
-            // console.log('dragenter' + ':' + event.target.id);
+            //console.log('dragenter' + ':' + event.target.id);
             // console.log(event);
         });
         document.addEventListener('dragleave', function(event) {
-            // console.log('dragleave' + ':' + event.target.id);
+            //console.log('dragleave' + ':' + event.target.id);
             // console.log(event);
         });
         document.addEventListener('dragover', function(event) {
-            // console.log('dragover' + ':' + event.target.id);            
+            //console.log('dragover' + ':' + event.target.id);            
             // console.log(event);
             
             // prevent default to allow drop
@@ -92,7 +102,7 @@
         });
         
         document.addEventListener('dragend', function(event) {
-            // console.log('dragend' + ':' + event.target.id);
+            console.log('dragend' + ':' + event.target.id);
             // console.log(event);
             //
             // document.getElementById("elementID").style.left = "50px";
@@ -105,14 +115,14 @@
             event.target.style.opacity = '1';            
         });
         document.addEventListener('dragexit', function(event) {
-            // console.log('dragexit' + ':' + event.target.id);
+            //console.log('dragexit' + ':' + event.target.id);
             //console.log(event);
         });
         document.addEventListener("drop", function( event ) {
             // prevent default action (open as link for some elements)
-            // event.preventDefault();
+            //event.preventDefault();
             console.log('drop' + ':' + event.target.id);
-            console.log(event);
+            //console.log(event);
         });
 
     </script>
