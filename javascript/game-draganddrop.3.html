@@ -65,8 +65,8 @@
             event.target.style.opacity = '0.4';  // this / e.target is the source node.
 
             //document.getElementById("elementID").setAttribute("initialX", event.clientX);
-            event.target.setAttribute("initialLayerX", event.layerX);
-            event.target.setAttribute("initialLayerY", event.layerY);
+            event.target.setAttribute("initialX", event.clientX);
+            event.target.setAttribute("initialY", event.clientY);
 
         });
 
@@ -97,10 +97,10 @@
             //
             // document.getElementById("elementID").style.left = "50px";
 
-            var x = event.clientX - event.target.getAttribute("initialLayerX");
-            event.target.style.left = x + "px";
-            var y = event.clientY - event.target.getAttribute("initialLayerY");
-            event.target.style.top = y + "py";
+            var x = event.clientX - Number(event.target.getAttribute("initialX"));
+            var y = event.clientY - Number(event.target.getAttribute("initialY"));
+            event.target.style.left = event.target.offsetLeft + x + "px";
+            event.target.style.top = event.target.offsetTop + y + "px";
 
             event.target.style.opacity = '1';            
         });

@@ -46,7 +46,8 @@
         // https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
 
         // init
-        var element = document.getElementById("elementID");        
+        var element = document.getElementById("elementID");
+
 
         element.addEventListener('dragstart', function(event) {
             console.log('dragstart');
@@ -55,8 +56,8 @@
             this.style.opacity = '0.4';  // this / e.target is the source node.
 
             //document.getElementById("elementID").setAttribute("initialX", event.clientX);
-            this.setAttribute("initialLayerX", event.layerX);
-            this.setAttribute("initialLayerY", event.layerY);
+            this.setAttribute("initialX", event.clientX);
+            this.setAttribute("initialY", event.clientY);
 
         });
 
@@ -86,13 +87,12 @@
             console.log(event);
             //
             // document.getElementById("elementID").style.left = "50px";
-
-            // var x = event.clientX + this.getAttribute("initialLayerX");
-            var x = event.screenX;
-            this.style.left = x + "px";
-            // var y = event.clientY + this.getAttribute("initialLayerY");
-            var y = event.screenY;
-            this.style.top = y + "py";
+    
+            var x = event.clientX - Number(this.getAttribute("initialX"));
+            var y = event.clientY - Number(this.getAttribute("initialY"));
+            this.style.left = event.target.offsetLeft + x + "px";
+            this.style.top = event.target.offsetTop + y + "px";
+            
 
             this.style.opacity = '1';            
         });
