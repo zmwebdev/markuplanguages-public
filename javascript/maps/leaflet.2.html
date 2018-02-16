@@ -41,29 +41,34 @@ crossorigin=""></script>
 </div>
 
 <script>
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([43.327355, -1.970576], 18);
 
 L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     subdomains: ['a','b','c']
 }).addTo( mymap );
 
-
-var circle = L.circle([51.508, -0.11], {
+/*
+var circle = L.circle([43.327355, -1.970576], {
     color: 'red',
     fillColor: '#f03',
-    fillOpacity: 0.5,
+    fillOpacity: 0.1,
     radius: 500
 }).addTo(mymap);
-
+*/
 var polygon = L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
+    [43.327086, -1.971043],
+    [43.327765, -1.970705],
+    [43.327628, -1.970222],
+    [43.327527, -1.97026],
+    [43.327351, -1.97005],
+    [43.327113, -1.97019],
+    [43.327027, -1.970506],
+    [43.326949, -1.970549]    
 ]).addTo(mymap);
 
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+//circle.bindPopup("I am a circle.");
+polygon.bindPopup("Zubiri-Manteo BHI.");
 
 
 var popup = L.popup();
