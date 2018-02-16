@@ -85,18 +85,9 @@ function onMapClick(e) {
 mymap.on('click', onMapClick);
 
 // path
+// https://stackoverflow.com/questions/35988652/leaflet-draw-road-path-in-real-time-based-on-two-marker
+// http://map.project-osrm.org 
 
-var pointA = new L.LatLng(43.327472, -1.970989);
-var pointB = new L.LatLng(43.32284, -1.984786);
-var pointList = [pointA, pointB];
-
-var firstpolyline = new L.Polyline(pointList, {
-    color: 'red',
-    weight: 3,
-    opacity: 0.5,
-    smoothFactor: 1
-});
-firstpolyline.addTo(mymap);
 
 </script>
 
