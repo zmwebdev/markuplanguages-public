@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <!--<meta name="referrer" content="no-referrer" />-->
+<title>euskalmet</title>
+</head>
+
+<body>
+    <!-- 
+http://opendata.euskadi.eus/catalogo/-/prediccion-meteorologica-de-2018/
+https://www.w3schools.com/Jsref/jsref_parse_json.asp
+    -->
+
+<div><h2>Eguraldia:</h2></div>
+<div id="azalpena"></div>
+<img id="irudia" src="">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+// Irakurri: https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/
+// http://opendata.euskadi.eus/hasiera/
+// https://stackoverflow.com/questions/28547288/no-access-control-allow-origin-header-is-present-on-the-requested-resource-err
+// https://www.html5rocks.com/en/tutorials/cors/
+// https://github.com/Rob--W/cors-anywhere
+// https://blog.javascripting.com/2015/01/17/dont-hassle-with-cors/
+// https://www.npmjs.com/package/cors-anywhere
+/*
+$ cd cors-proxy
+$ node app.js 
+*/
+$.ajax({
+        //url: "https://crossorigin.me/http://opendata.euskadi.eus/contenidos/prevision_tiempo/met_forecast/opendata/met_forecast.xml",
+        url: "http://javascript-zmwebdev.c9users.io:8081/http://opendata.euskadi.eus/contenidos/prevision_tiempo/met_forecast/opendata/met_forecast.xml",
+        //url: "met_forecast.xml",
+        dataType: "xml",
+	    success: function(data) {
+		    console.log(data);
+		    console.log(data.getElementsByTagName("forecast")[0]);
+		    console.log("Azalpena(eu): " + data.getElementsByTagName("forecast")[0].getElementsByTagName("description")[0].getElementsByTagName("eu")[0].innerHTML);
+		    document.getElementById("azalpena").innerHTML = data.getElementsByTagName("eu")[0].innerHTML;
+		    document.getElementById("irudia").src = "http://opendata.euskadi.eus" + data.getElementsByTagName("forecast")[0].getElementsByTagName("imageMap")[0].innerHTML.replace("<![CDATA[", "").replace("]]>", "");
+	    }
+    });
+/*
+var invocation = new XMLHttpRequest();
+var url = 'https://crossorigin.me/http://opendata.euskadi.eus/contenidos/prevision_tiempo/met_forecast/opendata/met_forecast.xml';
+ 
+function callOtherDomain() {
+  if(invocation) {    
+    invocation.open('GET', url, true);
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+}
+function handler(data) {
+    console.log(data);
+}
+callOtherDomain();
+*/
+</script>
+
+</body>
+
+</html> 
